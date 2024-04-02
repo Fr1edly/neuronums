@@ -1,0 +1,6 @@
+.gitignore
+.github
+.sh
+.venv
+.idea
+.
