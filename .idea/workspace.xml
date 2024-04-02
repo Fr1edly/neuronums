@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7b30e1b-3c24-422c-88b8-186c5c448834" name="Changes" comment="add build image workflow">
+    <list default="true" id="a7b30e1b-3c24-422c-88b8-186c5c448834" name="Changes" comment="fmt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712070823969</updated>
       <workItem from="1712070832946" duration="5089000" />
-      <workItem from="1712076467110" duration="8636000" />
+      <workItem from="1712076467110" duration="9267000" />
     </task>
     <task id="LOCAL-00001" summary="Init project + add draw module">
       <option name="closed" value="true" />
@@ -205,7 +205,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712085818685</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tune CI">
+      <option name="closed" value="true" />
+      <created>1712086772425</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712086772425</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fmt">
+      <option name="closed" value="true" />
+      <created>1712086924267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712086924267</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +245,9 @@
     <MESSAGE value="tune ignore files" />
     <MESSAGE value="tune gitignore" />
     <MESSAGE value="add build image workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="add build image workflow" />
+    <MESSAGE value="tune CI" />
+    <MESSAGE value="fmt" />
+    <option name="LAST_COMMIT_MESSAGE" value="fmt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/neuronums$predict.coverage" NAME="predict Coverage Results" MODIFIED="1712078443224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
