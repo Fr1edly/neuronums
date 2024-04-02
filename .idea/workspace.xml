@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7b30e1b-3c24-422c-88b8-186c5c448834" name="Changes" comment="print image version">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker-build.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712070823969</updated>
       <workItem from="1712070832946" duration="5089000" />
-      <workItem from="1712076467110" duration="12737000" />
+      <workItem from="1712076467110" duration="12911000" />
     </task>
     <task id="LOCAL-00001" summary="Init project + add draw module">
       <option name="closed" value="true" />
@@ -284,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712090149121</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="print image version">
+      <option name="closed" value="true" />
+      <created>1712090671624</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712090671624</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
