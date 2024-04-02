@@ -39,4 +39,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: fr1edly/${{ $IMAGE }}:${{ env.IMAGE_TAG }}
+          tags: fr1edly/neuronums:${{ env.IMAGE_TAG }}
