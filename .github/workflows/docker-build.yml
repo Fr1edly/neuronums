@@ -2,8 +2,8 @@ name: B/P Docker image
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - master
 
 jobs:
   build:
@@ -17,17 +17,25 @@ jobs:
         with:
           username: fr1edly
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Docker meta
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: fr1edly/neuronums
-          tags: |
-            type=semver,pattern={{version}}
+      - name: Prepare
+        id: prep
+        run: |
+          IMAGE="neuronums"
+          DOCKERFILE_PATH="./Dockerfile"
+          IMAGE_VERSION=$(grep --extended-regexp "^ARG image_tag=.*$" "${DOCKERFILE_PATH}" | cut -d '=' -f 2)
+          
+          if [[ -z "${IMAGE_VERSION}" ]]; then
+            echo "::error file=${DOCKERFILE_PATH},title=No tag in Dockerfile::Please, edit ${DOCKERFILE_PATH}: add line 'ARG image_tag=<your original image tag>'"
+            exit 1
+          fi
+          
+          BRANCH_OR_TAG=${GITHUB_REF#refs/*/}
+          RUN_NUMBER=${GITHUB_RUN_NUMBER}
+          IMAGE_TAG="${BRANCH_OR_TAG}-${IMAGE_VERSION}-${RUN_NUMBER}"
+          echo "IMAGE_TAG=${IMAGE_TAG}" >> $GITHUB_ENV
       - name: build and push
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: fr1edly/$IMAGE:${{ env.IMAGE_TAG }}
