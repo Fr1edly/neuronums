@@ -1,5 +1,5 @@
 ARG image_tag=0.0.1
-FROM python:3.12.2-slim
+FROM python:3.12-slim
 LABEL authors="Fredly"
 
 RUN apt-get update && apt-get install -y \
