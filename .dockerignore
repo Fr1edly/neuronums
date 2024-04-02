@@ -1,6 +1,5 @@
 .gitignore
-.github
 .sh
-.venv
-.idea
-.
+.venv/
+.idea/
+model/

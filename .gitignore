@@ -1,5 +1,6 @@
-.xml
-.iml
-.idea
-.venv
+.gitignore
+.github
 .sh
+.venv/
+.idea/
+model/
