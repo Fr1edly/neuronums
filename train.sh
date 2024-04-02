@@ -1,0 +1,1 @@
+docker run -d -v $(pwd)/draws:/app/draws neuronums:latest
