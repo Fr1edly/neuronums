@@ -1,6 +1,7 @@
 import argparse
 import os
 from predict import predict_images_in_folder
+from evaluate import evaluate_model
 # Импортируйте необходимые модули для обучения, предсказания и т.д.
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 def main():
@@ -12,7 +13,7 @@ def main():
         # Вызов функции обучения из соответствующего модуля
         pass
     elif args.mode == 'eval':
-
+        evaluate_model('model/mnist_cnn.h5')
         pass
     elif args.mode == 'predict':
         folder_path = './draws'
