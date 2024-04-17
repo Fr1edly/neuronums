@@ -42,15 +42,15 @@ while True:
             drawing = False
         elif event.type == pygame.KEYDOWN:
             if input_active:
-                if event.key == pygame.K_RETURN:
-                    pygame.image.save(screen, f"draws/{text_input}.png")
-                    text_input = ""  # Сброс ввода после сохранения
-                elif event.key == pygame.K_BACKSPACE:
+                if event.key == pygame.K_BACKSPACE:
                     text_input = text_input[:-1]
                 else:
                     text_input += event.unicode
                 input_active = False  # Деактивировать ввод после нажатия Enter
-            elif event.key == pygame.K_s:  # Нажатие 's' активирует ввод
+            if event.key == pygame.K_RETURN:
+                pygame.image.save(screen, f"./draws/{text_input}.png")
+                pygame.quit()
+            if event.key == pygame.K_s:  # Нажатие 's' активирует ввод
                 input_active = True
 
         elif event.type == pygame.MOUSEMOTION:
