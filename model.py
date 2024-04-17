@@ -1,5 +1,6 @@
 from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense, Conv2D, Flatten, MaxPooling2D
+from tensorflow.keras.layers import Input, Dense, Conv2D, Flatten, MaxPooling2D, concatenate
+from tensorflow.keras.models import Model
 
 def create_model():
     input_shape = (28, 28, 1)
