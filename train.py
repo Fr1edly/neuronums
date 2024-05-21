@@ -18,7 +18,7 @@ def load_data():
 
 def train_model(model, x_train, y_train, x_test, y_test):
     # Обучение модели с двумя входами
-    model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=5, batch_size=128)
+    model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=10, batch_size=128)
 
 
 if __name__ == "__main__":
